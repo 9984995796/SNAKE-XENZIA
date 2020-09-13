@@ -1,0 +1,87 @@
+<!DOCTYPE  html>
+<html>
+<head>
+	<title>SNAKE XENZIA</title>
+	<link rel="shorcout icon" type="image/png" href="images/snake.png" >
+	<style >
+
+		.heading{
+        font-family: cursive;
+    font-weight: bold;
+    color: #d5fc00;
+    text-align: center;
+    font-size: 3rem;
+
+		}
+		#canvas{
+			background:black;
+			
+            margin-top: 29px;
+            border:10px ridge red;
+		}
+			
+		
+		body{
+			background:#A4C856;
+		}
+		
+		.img{
+			display: flex;
+    flex-basis: 33.3%;
+    align-items: center;
+    margin-left: 131px;
+    
+}
+			
+			
+		
+		.section{
+			display: flex ;
+			flex-direction: row;
+			
+
+		}
+		.image{
+			
+			
+		     height: 184px;
+		}
+		.moving{
+			animation: move 4s alternate infinite ;
+			position: relative;
+		}
+		@keyframes move{
+			0%{top:0px;}
+			50%{top:133px;}
+			100%{top:0px;}
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<div class="heading">
+	SNAKE XENZIA
+	    </div>
+    </header>
+	<section class="section">
+		 <div class="img">
+		 	<div class="moving">
+		 	<img class="image" src="images/snake.png">
+		 	</div>
+		 </div>
+	<div class="canvas">
+ <canvas id="canvas" width="500" height="500" ></canvas>
+ </div>
+ <div class="img">
+ 	<div class="moving">
+ 	<img class="image" src="images/snake.png">
+    </div>
+ </div>
+ </section>
+
+
+ <script src="main.js"></script>
+</body>
+
+</html>
